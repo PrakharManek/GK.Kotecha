@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - GK Kotecha & Associates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>GK Kotecha & Associates</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="recruitment.html" class="nav-link">Recruitment</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Panel -->
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1><i class="fas fa-cogs"></i> Admin Panel</h1>
+            <p>Manage your website content, events, and recruitment</p>
+        </div>
+
+        <!-- Admin Navigation -->
+        <div class="admin-nav">
+            <button class="admin-nav-btn active" data-section="blog">
+                <i class="fas fa-blog"></i> Blog Posts
+            </button>
+            <button class="admin-nav-btn" data-section="events">
+                <i class="fas fa-calendar-alt"></i> Events
+            </button>
+            <button class="admin-nav-btn" data-section="jobs">
+                <i class="fas fa-briefcase"></i> Job Listings
+            </button>
+            <button class="admin-nav-btn" data-section="applications">
+                <i class="fas fa-file-alt"></i> Applications
+            </button>
+            <button class="admin-nav-btn" data-section="contacts">
+                <i class="fas fa-envelope"></i> Contact Messages
+            </button>
+            <button class="admin-nav-btn" data-section="newsletter">
+                <i class="fas fa-newspaper"></i> Newsletter
+            </button>
+        </div>
+
+        <!-- Admin Content -->
+        <div id="admin-content">
+            <!-- Content will be loaded here dynamically -->
+        </div>
+
+        <!-- Dashboard Stats -->
+        <div class="admin-stats">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-blog"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="total-blog-posts">0</h3>
+                    <p>Blog Posts</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="total-events">0</h3>
+                    <p>Events</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="total-jobs">0</h3>
+                    <p>Job Listings</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="total-applications">0</h3>
+                    <p>Applications</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="total-contacts">0</h3>
+                    <p>Contact Messages</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="total-newsletter">0</h3>
+                    <p>Newsletter Subscribers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GK Kotecha & Associates</h3>
+                    <p>Professional company secretarial services for modern businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="recruitment.html">Recruitment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Company Formation</a></li>
+                        <li><a href="index.html#services">Compliance</a></li>
+                        <li><a href="index.html#services">Documentation</a></li>
+                        <li><a href="index.html#services">Board Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GK Kotecha & Associates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

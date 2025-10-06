@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment - GK Kotecha & Associates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>GK Kotecha & Associates</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="recruitment.html" class="nav-link active">Recruitment</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Join Our Team</h1>
+            <p>Build your career with us and contribute to excellence in corporate governance</p>
+        </div>
+    </section>
+
+    <!-- Why Work With Us -->
+    <section class="why-work-with-us">
+        <div class="container">
+            <h2>Why Work With GK Kotecha & Associates?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Professional Development</h3>
+                    <p>Continuous learning opportunities and career advancement programs</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Collaborative Environment</h3>
+                    <p>Work with experienced professionals in a supportive team environment</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Industry Expertise</h3>
+                    <p>Gain exposure to diverse clients and complex corporate governance challenges</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Growth Opportunities</h3>
+                    <p>Clear career progression paths and leadership development programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Filters -->
+    <section class="job-filters-section">
+        <div class="container">
+            <div class="blog-filters">
+                <button class="job-filter-btn active" data-filter="all">All Jobs</button>
+                <button class="job-filter-btn" data-filter="active">Active Positions</button>
+                <button class="job-filter-btn" data-filter="legal">Legal & Compliance</button>
+                <button class="job-filter-btn" data-filter="admin">Administrative</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings -->
+    <section class="job-listings-section">
+        <div class="container">
+            <h2>Current Openings</h2>
+            <div class="jobs-container" id="jobs-container">
+                <!-- Jobs will be loaded here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="application-process">
+        <div class="container">
+            <h2>Application Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Submit Application</h3>
+                    <p>Complete our online application form with your CV and cover letter</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Initial Review</h3>
+                    <p>Our HR team will review your application and qualifications</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Interview Process</h3>
+                    <p>Participate in interviews with our team members and leadership</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Final Decision</h3>
+                    <p>We'll notify you of our decision and next steps</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Team Says</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working at GK Kotecha & Associates has been an incredible journey. The learning opportunities and professional growth have exceeded my expectations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Darshna</strong>
+                        <span>Senior Company Secretary</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The collaborative culture and commitment to excellence make this a great place to build a career in corporate governance."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Michael Chen</strong>
+                        <span>Compliance Officer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I've grown both professionally and personally here. The mentorship and support from senior team members is exceptional."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Emily Rodriguez</strong>
+                        <span>Junior Legal Assistant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Application -->
+    <section class="general-application">
+        <div class="container">
+            <div class="general-application-content">
+                <h3>Don't See a Perfect Match?</h3>
+                <p>We're always looking for talented individuals to join our team. Submit a general application and we'll keep your details for future opportunities.</p>
+                <button class="btn btn-primary" onclick="openGeneralApplication()">Submit General Application</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GK Kotecha & Associates</h3>
+                    <p>Professional company secretarial services for modern businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="recruitment.html">Recruitment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Company Formation</a></li>
+                        <li><a href="index.html#services">Compliance</a></li>
+                        <li><a href="index.html#services">Documentation</a></li>
+                        <li><a href="index.html#services">Board Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GK Kotecha & Associates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

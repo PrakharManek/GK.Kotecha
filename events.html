@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - GK Kotecha & Associates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>GK Kotecha & Associates</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="events.html" class="nav-link active">Events</a>
+                <a href="recruitment.html" class="nav-link">Recruitment</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Events & Workshops</h1>
+            <p>Join us for professional development, networking, and industry insights</p>
+        </div>
+    </section>
+
+    <!-- Event Filters -->
+    <section class="event-filters-section">
+        <div class="container">
+            <div class="blog-filters">
+                <button class="event-filter-btn active" data-filter="all">All Events</button>
+                <button class="event-filter-btn" data-filter="upcoming">Upcoming</button>
+                <button class="event-filter-btn" data-filter="past">Past Events</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Calendar View -->
+    <section class="events-calendar-section">
+        <div class="container">
+            <div class="calendar-header">
+                <h2>Event Calendar</h2>
+                <div class="calendar-navigation">
+                    <button id="prev-month" class="btn btn-secondary">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <span id="current-month"></span>
+                    <button id="next-month" class="btn btn-secondary">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="calendar-grid" id="calendar-grid">
+                <!-- Calendar will be generated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Events List -->
+    <section class="events-list-section">
+        <div class="container">
+            <h2>All Events</h2>
+            <div class="events-container" id="events-container">
+                <!-- Events will be loaded here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Registration -->
+    <section class="event-registration">
+        <div class="container">
+            <div class="registration-content">
+                <h3>Interested in Our Events?</h3>
+                <p>Stay updated with our latest events, workshops, and networking opportunities</p>
+                <form class="event-registration-form" id="event-registration-form">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <select name="interests" required>
+                        <option value="">Select Your Interests</option>
+                        <option value="conferences">Conferences</option>
+                        <option value="workshops">Workshops</option>
+                        <option value="networking">Networking Events</option>
+                        <option value="seminars">Seminars</option>
+                        <option value="all">All Events</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">Register for Updates</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GK Kotecha & Associates</h3>
+                    <p>Professional company secretarial services for modern businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="recruitment.html">Recruitment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Company Formation</a></li>
+                        <li><a href="index.html#services">Compliance</a></li>
+                        <li><a href="index.html#services">Documentation</a></li>
+                        <li><a href="index.html#services">Board Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GK Kotecha & Associates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
