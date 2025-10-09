@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             initializeRecruitmentPage();
             break;
         case 'admin':
-            initializeAdminPage();
+            initializeAdminGate();
             break;
     }
 });
@@ -488,9 +488,41 @@ function applyForJob(jobId) {
 }
 
 // Admin page functionality
+function initializeAdminGate() {
+    const authBox = document.getElementById('admin-auth');
+    const adminContainer = document.getElementById('admin-container');
+    if (!authBox || !adminContainer) return;
+
+    // If already unlocked in this session, skip prompt
+    if (sessionStorage.getItem('adminUnlocked') === 'true') {
+        authBox.style.display = 'none';
+        adminContainer.style.display = '';
+        initializeAdminPage();
+        return;
+    }
+
+    const form = document.getElementById('admin-auth-form');
+    const passwordInput = document.getElementById('admin-password');
+    const errorEl = document.getElementById('admin-auth-error');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const value = (passwordInput.value || '').trim();
+        if (value === 'Prakhar@2006') {
+            sessionStorage.setItem('adminUnlocked', 'true');
+            authBox.style.display = 'none';
+            adminContainer.style.display = '';
+            initializeAdminPage();
+        } else {
+            errorEl.style.display = 'block';
+        }
+    });
+}
+
 function initializeAdminPage() {
     initializeAdminNavigation();
     loadAdminContent('blog');
+    updateAdminStats();
 }
 
 function initializeAdminNavigation() {
@@ -1250,11 +1282,7 @@ function updateAdminStats() {
 }
 
 // Update initializeAdminPage function
-function initializeAdminPage() {
-    initializeAdminNavigation();
-    loadAdminContent('blog');
-    updateAdminStats();
-}
+// (moved into initializeAdminPage above)
 
 // Update loadAdminContent function
 function loadAdminContent(section) {
