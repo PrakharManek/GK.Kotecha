@@ -207,13 +207,15 @@ body {
     color: #000000;
 }
 
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.team-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
 }
 
 .team-member {
+    flex-basis: 300px;
     text-align: center;
     padding: 30px;
     border-radius: 10px;
@@ -1956,3 +1958,4 @@ body {
         padding: 10px 5px;
     }
 }
+
